@@ -1,0 +1,17 @@
+GitHub:
+
+1° Passo: Entrar no diretório e executar o comando abaixo:
+git remote add origin <aqui vai o link do diretório no github>;
+ou
+git clone <link do diretório no github>
+
+2° Passo: Após alterar algum arquivo do diretório local e se o mesmo for enviado
+para o github, executar os passos abaixo:
+git add --all <este comando salva as alterações no diretório local>
+
+git commit -m "mensagem" <este faz com que os arquivos estejam em modo de ser enviados para o gitgub>
+
+git push origin master <este envia os arquivos para o diretório remoto no git hunb>
+
+
+
