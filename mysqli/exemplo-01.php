@@ -6,17 +6,12 @@ if ($conn->connect_error) {
 	echo "Error: " . $conn->connect_error;
 }
 
-$stmt = $conn->prepare("INSERT INTO tb_usuarios (dslogin, dssenha) VALUES (?, ?)");
+$stmt = $conn->prepare("INSERT INTO tb_usuarios (deslogin, dessenha) VALUES (?, ?)");
 
 $stmt->bind_param("ss", $login, $pass);
 
 $login = "user";
-$pass = "1345";
-
-$stmt->execute();
-
-$login = "root";
-$pass = "6789";
+$pass = "12345";
 
 $stmt->execute();
 

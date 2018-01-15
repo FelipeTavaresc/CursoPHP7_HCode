@@ -6,7 +6,7 @@ if ($conn->connect_error) {
 	echo "Error: " . $conn->connect_error;
 }
 
-$result = $conn->query("SELECT * FROM tb_usuarios ORDER BY dslogin");
+$result = $conn->query("SELECT * FROM tb_usuarios ORDER BY deslogin");
 
 $data = array();
 
